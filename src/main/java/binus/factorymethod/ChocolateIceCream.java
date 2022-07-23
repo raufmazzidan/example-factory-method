@@ -17,7 +17,9 @@ public class ChocolateIceCream implements IceCream {
     public void prepare() {
         System.out.println("Chocolate Ice Cream is prepared with following ingredient: "
                 + ingredient
-                + (this.toppings != null && !this.toppings.isEmpty() ? (" and with toppings " + this.toppings) : " and without toppings"));
+                + (this.toppings != null && !this.toppings.isEmpty() 
+                        ? (" and with toppings " + this.toppings) 
+                        : " and without toppings"));
     }
 
     public void setToppings(String toppings) {
